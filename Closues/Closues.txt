@@ -1,0 +1,18 @@
+var me = 'Rahul Jain';
+function greetMe() {
+	console.log(me);
+}
+greetMe();
+
+
+function celebrityName (firstName) {
+    var nameIntro = "This celebrity is ";
+   
+   function middileName (middleName) {
+      function lastName(lastName) {
+		  return nameIntro + middileName + lastName;
+		  }
+		  return lastName;
+    }
+    return middileName;
+}
