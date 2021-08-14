@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Sen', sans-serif;
+  letter-spacing: 1px;
+  min-height: 100vh;
+  background: #c9ced3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 500px;
+  height: 650px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 30px 10px rgba(0 , 0, 0 , 0.4);
+}
+
+#form {
+  width: 90%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  font-weight: bolder;
+  padding-bottom: 5px;
+}
+
+.form-group input {
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  height: 34px;
+  transition: all 0.3s;
+  font-family: Sen , 'sans-serif';
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+button {
+  cursor: pointer;
+  color: white;
+  background: black;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  font-family: Sen,sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+button:hover {
+  filter: brightness(200%);
+  background: rgb(22,22,22);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+   transform : scale(0.95);
+}
+
+.message-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}

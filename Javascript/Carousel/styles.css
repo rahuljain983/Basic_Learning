@@ -1,0 +1,63 @@
+.carousel {
+    overflow: hidden;
+    max-width: 500px;
+    position: relative;
+}
+
+.carousel .carousel_item,
+ .carousel .carousel_item-hidden{
+     display: none;
+     transition: display 1s;
+}
+
+.carousel .carousel_item img {
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+}
+
+.carousel .carousel_item-visible {
+    display: block;
+    animation: fadeVisibility 2s;
+}
+
+/* we need to get the action buttons i.e. prev and next on the top of the slides */
+
+.carousel .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* also remember this is also one way to bring the elemen to vertically center */
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.carousel .carousel__actions button {
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel .carousel__actions button #carousel__button-prev {
+    margin-left: 20px;
+}
+
+.carousel .carousel__actions button #carousel__button-next {
+    margin-right: 20px;
+}
+
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}
